@@ -5,8 +5,8 @@ api.decorateWidget('header-buttons:after', helper => {
     if(!showExtraInfo) {
         return helper.h('a.theme-switcherWrapper', [
             helper.h('a.theme-switcher--light', {
-                text: 'Light',
-                title: 'Change the Theme Color to Light'
+                text: '🌕',
+                title: 'Светлая тема'
             }),
             helper.h('input.theme-switcherBox.theme-switcher #theme-switcher', {
                 type:'checkbox'
@@ -17,8 +17,8 @@ api.decorateWidget('header-buttons:after', helper => {
             }
             }),
             helper.h('a.theme-switcher--dark', {
-                text:'Dark',
-                title: 'Change the Theme Color to Dark'
+                text:'🌙',
+                title: 'Темная тема'
             })
         ]);
     }
